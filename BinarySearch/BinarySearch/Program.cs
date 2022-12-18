@@ -19,7 +19,6 @@ namespace BinarySearch
 
             Console.WriteLine(BinarySearch(myList, 3));     // => 3 
             Console.WriteLine(BinarySearch(myList, -1));    // => ? 
-
         }
 
         public static int? BinarySearch(List<int> list, int item)
@@ -45,7 +44,7 @@ namespace BinarySearch
                     //Valida se aceitou o chute
                     if (guess == item) return list[mid];
 
-                    //Valida se o meu chute é alto ou baixo
+                    //Valida se o meu chute ï¿½ alto ou baixo
                     if (guess >= item)
                     {
                         high = mid - 1;
@@ -60,7 +59,7 @@ namespace BinarySearch
             }
             catch (Exception ex)
             {
-                //TODO - Capturar excessão.
+                //TODO - Capturar excessï¿½o.
                 //TODO - Capturar Log de error.
                 throw;
             }
